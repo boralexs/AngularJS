@@ -7,12 +7,13 @@ import {Meeting, MeetingServiceService} from '../meeting-service.service';
   styleUrls: ['./meeting-list.component.scss']
 })
 export class MeetingListComponent implements OnInit {
-
   public meeting: Meeting[];
-  constructor(private service: MeetingServiceService) {
-    this.meeting = [];
-  }
 
+  constructor(private service: MeetingServiceService) {
+
+    this.meeting = [];
+
+  }
 
   ngOnInit(): void {
     this.service.getMeetings().subscribe(x => {

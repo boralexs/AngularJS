@@ -5,14 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MeetingListComponent } from './meeting-list/meeting-list.component';
 import { MeetingsAttendComponent } from './meetings-attend/meetings-attend.component';
-import { CreateMeetingsComponent } from './create-meetings/create-meetings.component';
+import { CreateMeetingComponent } from './create-meeting/create-meeting.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeetingListComponent,
     MeetingsAttendComponent,
-    CreateMeetingsComponent
+    CreateMeetingComponent
   ],
   imports: [
     BrowserModule,
