@@ -18,7 +18,7 @@ export class MeetingServiceService {
 
   public addMeeting(title: string, date: Date): Observable<any> {
     const id = this.meeting.map(x => x.id).reduce((previous, next) => previous = previous < next ? next : previous ) + 1;
-    const newItem = {id: id, title: title, date: date, numberOfAttendances: 0};
+    const newItem = {id: id, title, date: date, numberOfAttendances: 0};
     this.meeting.push(newItem);
     return of(newItem);
   }
