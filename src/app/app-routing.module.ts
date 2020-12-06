@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {MeetingListComponent} from './meeting-list/meeting-list.component';
-import {MeetingsAttendComponent} from './meetings-attend/meetings-attend.component';
-import {CreateMeetingComponent} from './create-meeting/create-meeting.component';
+import {MainComponent} from './main/main.component';
+import {LoginComponent} from './login/login.component';
+import {ConvertorComponent} from './convertor/convertor.component';
+import {MortgageComponent} from './mortgage/mortgage.component';
 
 const routes: Routes = [
-  {path : '', pathMatch: 'full', component: MeetingListComponent},
-  {path : 'attend/:id', component: MeetingsAttendComponent},
-  {path : 'create', component: CreateMeetingComponent},
+  {path : '', pathMatch: 'full', component: MainComponent},
+  {path : 'main', component: MainComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'convertor', component: ConvertorComponent},
+  {path: 'mortgage', component: MortgageComponent}
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

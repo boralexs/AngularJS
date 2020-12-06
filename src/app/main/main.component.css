@@ -1,0 +1,83 @@
+/*
+#80B4B7
+#6CB3B7
+#104548
+#315153
+#326B6E
+*/
+main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  float: left;
+  flex-direction: column;
+  background: #80B4B7;
+}
+.main-header{
+  padding: 30px;
+  font-size: 30px;
+  background: #6CB3B7;
+}
+.main-header > .login{
+  float: right;
+  color: #104548;
+}
+.login > a{
+  text-decoration: none;
+  color: #104548;
+}
+.vertical{
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.login > a:hover
+{
+  text-decoration: none;
+  color: #DBB799;
+}
+
+.container{
+  display: flex;
+  width: 100%;
+  float: left;
+  flex-direction: column;
+}
+.sidebar{
+  height: 30% ;
+  font-size: 30px;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1%;
+}
+.sidebar > .menu-button{
+  display: block;
+  padding-left: 13%;
+  padding-right: 13%;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  text-decoration: none;
+  color:  #DBAA81;
+  background: #315153;
+}
+.sidebar > .menu-button:hover{
+  text-decoration: none;
+}
+.main-section{
+  width: 100%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  background-color: #326B6E;
+}
+.main-section > .content{
+  padding: 5%;
+  text-align: center;
+  background-color: white;
+  margin: 30px 60px 30px 60px;    /*top left  bottom right*/
+}
+#pick{
+  background-color: #326B6E;
+}
+
